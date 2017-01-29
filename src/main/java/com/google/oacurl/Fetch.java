@@ -74,7 +74,7 @@ import com.google.oacurl.util.PropertiesProvider;
 /**
  * Main class for curl-like interactions authenticated by OAuth.
  * <p>
- * Assumes that the user has run {@link Login} to save the OAuth access
+ * Assumes that the user has run {@link Login} to save the oauth access
  * token to a local properties file.
  *
  * @author phopkins@google.com
@@ -82,6 +82,7 @@ import com.google.oacurl.util.PropertiesProvider;
 public class Fetch {
 
   @SuppressWarnings("unused")
+  @SuppressWarnings("unchecked")
   private static Logger logger = Logger.getLogger(Login.class.getName());
 
   public static void main(String[] args) throws Exception {
